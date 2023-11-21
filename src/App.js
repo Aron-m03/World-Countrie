@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Dependency from "./Components/Dependency";
+import MyComponent from "./Components/Apitest";
+import Conditionality from "./Components/FetchData1";
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+  return(
+    <div className="container">
+     
+      {<MyComponent/>}
     </div>
-  );
+  )
 }
 
 export default App;
